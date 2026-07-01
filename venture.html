@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gerard Israel · Advanced Manufacturing &amp; Industrial Security</title>
+<meta name="description" content="Co-founder work applying security designed upstream to a greenfield advanced-manufacturing venture." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a href="index.html" class="monogram">Gerard Israel<span class="dot">.</span></a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="venture.html" class="here">Venture</a>
+      <a href="impact.html">Education &amp; Impact</a>
+      <a href="advisory.html">Advisory</a>
+      <a href="#contact" class="contact-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero motif">
+  <div class="wrap">
+    <span class="eyebrow">Co-Founder · Advanced Manufacturing &amp; Industrial Security</span>
+    <h1>Security, designed upstream, on a <span class="accent">factory floor.</span></h1>
+    <p class="sub">Alongside my security executive career, I co-founded a venture building greenfield manufacturing capability for rare-earth and critical-mineral components used across EV, clean-energy, aerospace, and defense supply chains. My focus has been the operational technology, industrial security, and execution planning a build like this depends on.</p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What I led</span>
+      <h2>Contributions</h2>
+    </div>
+    <div class="feature-list">
+      <div class="feature reveal"><h4>EPC-M bid documentation</h4><p>Authored technical bid documentation and vendor qualification frameworks for specialized industrial engineering, procurement, and construction contractors.</p></div>
+      <div class="feature reveal"><h4>Industrial OT &amp; cybersecurity strategy</h4><p>Defined the operational-technology and industrial cybersecurity approach for a greenfield facility, including software bill of materials, source-code escrow, digital-twin considerations, and export-control compliance.</p></div>
+      <div class="feature reveal"><h4>Execution roadmap &amp; governance</h4><p>Built the master execution roadmap and program-governance structure coordinating multiple specialized contracts across design, civil works, and process technology.</p></div>
+      <div class="feature reveal"><h4>Research &amp; strategy</h4><p>Conducted the market, technical, and vendor research underpinning site, program, and partnership strategy.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="prose reveal">
+      <p>This is the same conviction that shaped my security career, applied to physical infrastructure from day one. A manufacturing plant, like a core banking platform or a hospital network, only stays secure if security is part of how it gets designed, not layered on after commissioning. Co-founding this venture let me put that thinking into an industrial build from the ground up: process equipment, controls, physical security, and supply-chain risk, together.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="panel reveal">
+      <h3>My role</h3>
+      <p>I co-founded this venture and led its security, operational-technology, and execution-planning work; the documentation, research, and frameworks referenced here are mine. Day-to-day operating control of the venture sits with my co-founder and the broader team.</p>
+      <span class="flag">Site, capacity, and commercial details are confidential and intentionally omitted.</span>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow">Let's talk</span>
+    <h2>Building something in advanced manufacturing?</h2>
+    <p>Industrial OT security, cyber-physical program design, or a conversation about what this work has taught me.</p>
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:GerardIsrael1@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-name">Gerard Israel<span class="dot">.</span></div>
+      <p class="foot-tag">Security executive, advisor, and educator. Cyber-physical and critical-infrastructure security, designed upstream.</p>
+    </div>
+    <div>
+      <div class="fmono">Explore</div>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="venture.html">Venture</a>
+      <a href="impact.html">Education &amp; Impact</a>
+      <a href="advisory.html">Advisory</a>
+    </div>
+    <div>
+      <div class="fmono">Connect</div>
+      <a href="mailto:GerardIsrael1@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap"><div class="foot-legal">&copy; <span id="yr"></span> Gerard Israel · Ashburn, VA</div></div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
