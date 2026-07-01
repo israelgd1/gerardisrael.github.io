@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gerard Israel · Critical Infrastructure &amp; OT Security</title>
+<meta name="description" content="Security for systems where a failure is physical, from pharmacy robotics to industrial builds." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a href="index.html" class="monogram">Gerard Israel</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="toggleNav(this)">&#9776;</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="industries.html" class="here">Industries</a>
+      <a href="venture.html">Venture</a>
+      <a href="impact.html">Education & Impact</a>
+      <a href="advisory.html">Advisory</a>
+      <a href="#contact" class="contact-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="hero motif">
+  <div class="wrap">
+    <span class="eyebrow">Critical Infrastructure &amp; OT</span>
+    <h1>Security where a failure is <span class="accent">physical</span>.</h1>
+    <p class="sub">From automated pharmacy fulfillment to a greenfield industrial build.</p>
+  </div>
+</section>
+<section class="block">
+  <div class="wrap">
+    <div class="prose lg reveal"><p>This is the edge of my work: systems where a security failure does not leak a file, it stops something essential or puts a person at risk. In automated pharmacy fulfillment, I built a quantitative risk framework for the robotics, weighing likelihood of compromise, operational impact, and patient safety, and drove remediation on critical vulnerabilities across automation and vendor-managed devices using device authentication, zero trust, and micro-segmentation.</p><p>On a greenfield industrial venture, I designed the operational-technology and industrial cybersecurity approach from the first decision, so the risks that normally surface late, insecure controls, unmanaged devices, supply-chain gaps, were engineered out up front. The throughline across both is consequence-driven and upstream: secure the system before it is built, because it will run for years and the failure mode is physical.</p></div>
+  </div>
+  <div class="wrap" style="margin-top:24px;"><span class="flag">Details of the industrial venture are confidential and intentionally omitted.</span></div>
+</section>
+<section class="block"><div class="wrap"><div class="sec-head reveal"><div class="kicker">Proof</div><h2>What it produced</h2></div><div class="outcomes"><div class="oc reveal"><div class="n">Robotics risk</div><div class="l">Quantitative framework weighing patient safety</div></div><div class="oc reveal"><div class="n">Zero trust + OT</div><div class="l">Device authentication and micro-segmentation</div></div><div class="oc reveal"><div class="n">Greenfield</div><div class="l">Industrial OT security designed from day one</div></div><div class="oc reveal"><div class="n">Consequence-driven</div><div class="l">Built for physical-world impact</div></div></div></div></section>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker" style="justify-content:center;">Let's talk</div>
+    <h2>Open to the right conversation.</h2>
+    <p>Security leadership roles, advisory work, or a conversation about protecting the systems that can't fail.</p>
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:GerardIsrael1@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-name">Gerard Israel</div>
+      <p class="foot-tag">Security executive, advisor, and educator. Critical-infrastructure and cyber-physical security, designed upstream.</p>
+    </div>
+    <div>
+      <div class="fmono">Explore</div>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="industries.html">Industries</a>
+      <a href="venture.html">Venture</a>
+      <a href="impact.html">Education &amp; Impact</a>
+      <a href="advisory.html">Advisory</a>
+    </div>
+    <div>
+      <div class="fmono">Connect</div>
+      <a href="mailto:GerardIsrael1@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap"><div class="foot-legal">&copy; <span id="yr"></span> Gerard Israel · Ashburn, VA</div></div>
+</footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  function toggleNav(btn){var h=btn.closest('header'); var open=h.classList.toggle('open'); btn.setAttribute('aria-expanded', open);}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>

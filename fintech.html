@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gerard Israel · Fintech &amp; Capital Markets Security</title>
+<meta name="description" content="Building a security program through a $1B acquisition under FINRA scrutiny." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a href="index.html" class="monogram">Gerard Israel</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="toggleNav(this)">&#9776;</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="industries.html" class="here">Industries</a>
+      <a href="venture.html">Venture</a>
+      <a href="impact.html">Education & Impact</a>
+      <a href="advisory.html">Advisory</a>
+      <a href="#contact" class="contact-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="hero motif">
+  <div class="wrap">
+    <span class="eyebrow">Fintech &amp; Capital Markets</span>
+    <h1>A security program built through a <span class="accent">$1B acquisition</span>.</h1>
+    <p class="sub">First security hire at tastytrade, through its acquisition by IG Group under FINRA scrutiny.</p>
+  </div>
+</section>
+<section class="block">
+  <div class="wrap">
+    <div class="prose lg reveal"><p>I joined as the first and only dedicated security hire, brought in to build a real program from nothing ahead of a $1B acquisition and under active regulatory scrutiny. The tools existed on paper but were not working: an EDR deployed without alerting, and a SIEM bought and never configured.</p><p>I stood both up properly, built a product-security framework and an operations team, and created a two-track threat-intelligence function. One side watched customer-account fraud and takeover on a platform where people manage real money; the other tracked application vulnerabilities in the wild during the Log4j crisis. After the deal closed I ran North American security on a follow-the-sun model, and that program became the acquirer's entry point into the US market.</p></div>
+  </div>
+  
+</section>
+<section class="block"><div class="wrap"><div class="sec-head reveal"><div class="kicker">Proof</div><h2>What it produced</h2></div><div class="outcomes"><div class="oc reveal"><div class="n">First hire</div><div class="l">Built the program from zero</div></div><div class="oc reveal"><div class="n">$1B</div><div class="l">Acquisition security and due diligence</div></div><div class="oc reveal"><div class="n">50-person</div><div class="l">Global org, follow-the-sun operations</div></div><div class="oc reveal"><div class="n">US entry</div><div class="l">The program that opened the American market</div></div></div></div></section>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker" style="justify-content:center;">Let's talk</div>
+    <h2>Open to the right conversation.</h2>
+    <p>Security leadership roles, advisory work, or a conversation about protecting the systems that can't fail.</p>
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:GerardIsrael1@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-name">Gerard Israel</div>
+      <p class="foot-tag">Security executive, advisor, and educator. Critical-infrastructure and cyber-physical security, designed upstream.</p>
+    </div>
+    <div>
+      <div class="fmono">Explore</div>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="industries.html">Industries</a>
+      <a href="venture.html">Venture</a>
+      <a href="impact.html">Education &amp; Impact</a>
+      <a href="advisory.html">Advisory</a>
+    </div>
+    <div>
+      <div class="fmono">Connect</div>
+      <a href="mailto:GerardIsrael1@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap"><div class="foot-legal">&copy; <span id="yr"></span> Gerard Israel · Ashburn, VA</div></div>
+</footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  function toggleNav(btn){var h=btn.closest('header'); var open=h.classList.toggle('open'); btn.setAttribute('aria-expanded', open);}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>

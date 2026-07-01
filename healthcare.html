@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gerard Israel · Healthcare Security</title>
+<meta name="description" content="Infrastructure and clinic security across a 300-site care and pharmacy network." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a href="index.html" class="monogram">Gerard Israel</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="toggleNav(this)">&#9776;</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="industries.html" class="here">Industries</a>
+      <a href="venture.html">Venture</a>
+      <a href="impact.html">Education & Impact</a>
+      <a href="advisory.html">Advisory</a>
+      <a href="#contact" class="contact-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="hero motif">
+  <div class="wrap">
+    <span class="eyebrow">Healthcare</span>
+    <h1>Security across a <span class="accent">300-site</span> care and pharmacy network.</h1>
+    <p class="sub">Head of Infrastructure and Clinic Security for One Medical and Amazon Pharmacy.</p>
+  </div>
+</section>
+<section class="block">
+  <div class="wrap">
+    <div class="prose lg reveal"><p>I led infrastructure and clinic security across more than 300 healthcare sites, where the systems support patient care and prescription fulfillment. When I arrived, controls were inconsistent from site to site and the risk was hard to see.</p><p>I standardized controls across the fleet, built secure-by-default cloud guardrails, and stood up AI-assisted detection and response. I hardened the pharmacy and clinic footprint through network segmentation, PHI-safe data handling, tightly controlled vendor access, and resilient monitoring.</p></div>
+  </div>
+  
+</section>
+<section class="block"><div class="wrap"><div class="sec-head reveal"><div class="kicker">Proof</div><h2>What it produced</h2></div><div class="outcomes"><div class="oc reveal"><div class="n">42 → 96%</div><div class="l">Control coverage across 300+ sites</div></div><div class="oc reveal"><div class="n">1,200+ → <100</div><div class="l">High-risk issues remaining</div></div><div class="oc reveal"><div class="n">$60M+</div><div class="l">Cloud security governed, provisioning cut to under an hour</div></div><div class="oc reveal"><div class="n">MTTR halved</div><div class="l">AI-assisted detection and response</div></div></div></div></section>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker" style="justify-content:center;">Let's talk</div>
+    <h2>Open to the right conversation.</h2>
+    <p>Security leadership roles, advisory work, or a conversation about protecting the systems that can't fail.</p>
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:GerardIsrael1@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-name">Gerard Israel</div>
+      <p class="foot-tag">Security executive, advisor, and educator. Critical-infrastructure and cyber-physical security, designed upstream.</p>
+    </div>
+    <div>
+      <div class="fmono">Explore</div>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="industries.html">Industries</a>
+      <a href="venture.html">Venture</a>
+      <a href="impact.html">Education &amp; Impact</a>
+      <a href="advisory.html">Advisory</a>
+    </div>
+    <div>
+      <div class="fmono">Connect</div>
+      <a href="mailto:GerardIsrael1@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap"><div class="foot-legal">&copy; <span id="yr"></span> Gerard Israel · Ashburn, VA</div></div>
+</footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  function toggleNav(btn){var h=btn.closest('header'); var open=h.classList.toggle('open'); btn.setAttribute('aria-expanded', open);}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>

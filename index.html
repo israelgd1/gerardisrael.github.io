@@ -14,13 +14,15 @@
 
 <header class="bar">
   <div class="wrap bar-inner">
-    <a href="index.html" class="monogram">Gerard Israel<span class="dot">.</span></a>
+    <a href="index.html" class="monogram">Gerard Israel</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="toggleNav(this)">&#9776;</button>
     <nav class="links">
       <a href="index.html" class="here">Home</a>
       <a href="about.html">About</a>
       <a href="security.html">Security</a>
+      <a href="industries.html">Industries</a>
       <a href="venture.html">Venture</a>
-      <a href="impact.html">Education &amp; Impact</a>
+      <a href="impact.html">Education & Impact</a>
       <a href="advisory.html">Advisory</a>
       <a href="#contact" class="contact-link">Contact</a>
     </nav>
@@ -32,8 +34,8 @@
     <div class="hero-grid">
       <div>
         <span class="eyebrow">Security Executive · Advisor · Educator</span>
-        <h1>I design security into the <span class="accent">build</span>, not onto it.</h1>
-        <p class="sub">Thirteen years leading cybersecurity across financial services, healthcare, fintech, and retail. Eight years teaching STEM and building makers. One throughline: taking what is complex and hard to reach, and making it real for the people who need it.</p>
+        <h1>I secure the systems that <span class="accent">can’t fail.</span></h1>
+        <p class="sub">Fifteen years of security leadership across banking, healthcare, fintech, retail, and industrial systems, protecting the technology that keeps essential services running. I work upstream, shaping the build before the risk is baked in.</p>
         <div class="cta-row">
           <a class="btn primary" href="about.html">My story</a>
           <a class="btn ghost" href="#contact">Get in touch</a>
@@ -125,6 +127,19 @@
 
 <section class="block">
   <div class="wrap">
+    <div class="sec-head reveal"><div class="kicker">Industries</div><h2>Where I've done it</h2></div>
+    <div class="pillars">
+      <a class="pillar reveal" href="financial-services.html"><div class="pnum">BANKING</div><h3>Financial Services</h3><p>Security for a next-generation core banking platform.</p><span class="go">Explore &rarr;</span></a>
+      <a class="pillar reveal" href="healthcare.html"><div class="pnum">HEALTHCARE</div><h3>Healthcare</h3><p>Infrastructure and clinic security across 300+ sites.</p><span class="go">Explore &rarr;</span></a>
+      <a class="pillar reveal" href="fintech.html"><div class="pnum">FINTECH</div><h3>Fintech &amp; Capital Markets</h3><p>A program built through a $1B acquisition.</p><span class="go">Explore &rarr;</span></a>
+      <a class="pillar reveal" href="retail.html"><div class="pnum">RETAIL</div><h3>Retail</h3><p>Data protection across 300+ stores.</p><span class="go">Explore &rarr;</span></a>
+      <a class="pillar reveal" href="critical-infrastructure.html"><div class="pnum">CRITICAL INFRA</div><h3>Critical Infrastructure &amp; OT</h3><p>Security where a failure is physical.</p><span class="go">Explore &rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
     <div class="sec-head reveal">
       <div class="kicker">The range</div>
       <h2>Measured impact, boardroom to classroom</h2>
@@ -169,13 +184,14 @@
 <footer>
   <div class="wrap foot-grid">
     <div>
-      <div class="foot-name">Gerard Israel<span class="dot">.</span></div>
-      <p class="foot-tag">Security executive, advisor, and educator. Cyber-physical and critical-infrastructure security, designed upstream.</p>
+      <div class="foot-name">Gerard Israel</div>
+      <p class="foot-tag">Security executive, advisor, and educator. Critical-infrastructure and cyber-physical security, designed upstream.</p>
     </div>
     <div>
       <div class="fmono">Explore</div>
       <a href="about.html">About</a>
       <a href="security.html">Security</a>
+      <a href="industries.html">Industries</a>
       <a href="venture.html">Venture</a>
       <a href="impact.html">Education &amp; Impact</a>
       <a href="advisory.html">Advisory</a>
@@ -191,8 +207,9 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-  const io = new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  function toggleNav(btn){var h=btn.closest('header'); var open=h.classList.toggle('open'); btn.setAttribute('aria-expanded', open);}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 </script>
 </body>
 </html>

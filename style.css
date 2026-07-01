@@ -284,3 +284,21 @@ footer{ border-top:1px solid var(--line-soft); padding:52px 0 40px; }
   .beam{ animation:none !important; }
 }
 :focus-visible{ outline:2px solid var(--brass); outline-offset:3px; }
+
+/* ---------------- mobile nav (hamburger) ---------------- */
+.nav-toggle{ display:none; background:none; border:0; color:var(--paper); font-size:22px; line-height:1; cursor:pointer; padding:6px; }
+@media(max-width:900px){
+  nav.links{ gap:0; }
+  .nav-toggle{ display:block; }
+  header.bar nav.links{
+    position:absolute; top:100%; left:0; right:0;
+    flex-direction:column; align-items:stretch;
+    background:rgba(10,20,29,.98); border-bottom:1px solid var(--line);
+    padding:6px 0; display:none;
+  }
+  header.bar.open nav.links{ display:flex; }
+  header.bar nav.links a{ padding:13px 30px; width:100%; font-size:15px; }
+  header.bar nav.links a.contact-link{ display:block; }
+  header.bar nav.links a.here::after{ display:none; }
+  header.bar nav.links a.here{ color:var(--brass); }
+}

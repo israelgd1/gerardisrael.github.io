@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gerard Israel · Financial Services Security</title>
+<meta name="description" content="Security strategy and architecture for a next-generation core banking platform." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a href="index.html" class="monogram">Gerard Israel</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" onclick="toggleNav(this)">&#9776;</button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="industries.html" class="here">Industries</a>
+      <a href="venture.html">Venture</a>
+      <a href="impact.html">Education & Impact</a>
+      <a href="advisory.html">Advisory</a>
+      <a href="#contact" class="contact-link">Contact</a>
+    </nav>
+  </div>
+</header>
+<section class="hero motif">
+  <div class="wrap">
+    <span class="eyebrow">Financial Services · Banking</span>
+    <h1>Security for the systems that <span class="accent">move money</span>.</h1>
+    <p class="sub">Leading security strategy and architecture for a next-generation core banking platform at JPMorgan Chase.</p>
+  </div>
+</section>
+<section class="block">
+  <div class="wrap">
+    <div class="prose lg reveal"><p>One of the world's largest banks is replacing decades-old core systems with a modern, cloud-native platform, the ledger that clears deposits, lending, cards, and payments. I lead security strategy, architecture, and governance for that build, working through director-level leaders across platform security, infrastructure security, and governance and risk.</p><p>My focus is upstream. I shape architecture reviews, CI/CD and source-integration security, third-party concentration risk, and control-gap remediation before those decisions harden, and I translate complex platform, cloud, and resiliency risk into terms executives and regulators can act on.</p></div>
+  </div>
+  
+</section>
+<section class="block"><div class="wrap"><div class="sec-head reveal"><div class="kicker">Proof</div><h2>What it produced</h2></div><div class="outcomes"><div class="oc reveal"><div class="n">Core banking</div><div class="l">Securing a national-scale money-movement platform</div></div><div class="oc reveal"><div class="n">3 directors</div><div class="l">Platform, infrastructure, and GRC leaders</div></div><div class="oc reveal"><div class="n">Upstream</div><div class="l">Security shaping architecture before decisions lock</div></div><div class="oc reveal"><div class="n">Board-ready</div><div class="l">Platform risk translated for executives and regulators</div></div></div></div></section>
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker" style="justify-content:center;">Let's talk</div>
+    <h2>Open to the right conversation.</h2>
+    <p>Security leadership roles, advisory work, or a conversation about protecting the systems that can't fail.</p>
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:GerardIsrael1@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-name">Gerard Israel</div>
+      <p class="foot-tag">Security executive, advisor, and educator. Critical-infrastructure and cyber-physical security, designed upstream.</p>
+    </div>
+    <div>
+      <div class="fmono">Explore</div>
+      <a href="about.html">About</a>
+      <a href="security.html">Security</a>
+      <a href="industries.html">Industries</a>
+      <a href="venture.html">Venture</a>
+      <a href="impact.html">Education &amp; Impact</a>
+      <a href="advisory.html">Advisory</a>
+    </div>
+    <div>
+      <div class="fmono">Connect</div>
+      <a href="mailto:GerardIsrael1@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/gerardisrael" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+  <div class="wrap"><div class="foot-legal">&copy; <span id="yr"></span> Gerard Israel · Ashburn, VA</div></div>
+</footer>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  function toggleNav(btn){var h=btn.closest('header'); var open=h.classList.toggle('open'); btn.setAttribute('aria-expanded', open);}
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
